@@ -1,0 +1,19 @@
+
+.btns__wrapper {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+   
+}
+
+button {
+    width: 150px;
+    height: 100px;
+    cursor:pointer;
+}
+
+.blue {
+    background-color: blue;
+}

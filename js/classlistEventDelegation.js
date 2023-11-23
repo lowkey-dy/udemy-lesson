@@ -2,18 +2,18 @@
 // Делегирование событий
    const btns = document.querySelectorAll('button');
 
-    /* cobsole.log(btns[0].classlist.length);
-    cobsole.log(btns[0].classlist.item(1));
-   console.log(btns[0].classList.add('red'));
-   console.log(btns[0].classList.remove('blue'));
-   console.log(btns[0].classList.toggle('blue')); */
+//    console.log(btns[0].classlist.length);
+//    console.log(btns[0].classlist.item(1));
+//    console.log(btns[0].classList.add('red'));
+//    console.log(btns[0].classList.remove('blue'));
+   console.log(btns[0].classList.toggle('blue')); 
 
-/*    Если первая кнорка содержит класс 'red'
+    // Если первая кнопка содержит класс 'red'
    if (btns[1].classList.contains('red')) {
     console.log('red');
-   } */
+   } 
 
-// Работает одинаково// Hf,jnftn jlbyfrjdj
+// Работает одинаково// 
 
 btns[0].addEventListener('click', () => {
     if (!btns[1].classList.contains('red')) {
@@ -28,11 +28,11 @@ btns[0].addEventListener('click', () => {
 
 });
 
-wrapper = document.querySelector('.btn-block');
+wrapper = document.querySelector('.btns__wrapper');
 
 wrapper.addEventListener('click', (event) => {
     if (event.target && event.target.tagName == "BUTTON") {
-        console.log('Hello');
+        btns[1].classList.add('blue');
     };
 });
 

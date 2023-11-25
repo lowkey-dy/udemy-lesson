@@ -23,17 +23,32 @@ btns[0].addEventListener('click', () => {
     }
 });
 
-btns[0].addEventListener('click', () => {
+btns[0].addEventListener('click', () => { 
     btns[1].classList.toggle('red');
 
 });
 
 wrapper = document.querySelector('.btns__wrapper');
 
-wrapper.addEventListener('click', (event) => {
+/* wrapper.addEventListener('click', (event) => {
     if (event.target && event.target.tagName == "BUTTON") {
-        btns[1].classList.add('blue');
+        // btns[1].classList.add('blue');
+        console.log('Hello');
     };
+}); */
+
+wrapper.addEventListener('click', (event) => {
+    if (event.target && event.target.matches("button.red")) {
+
+    }
+});
+
+
+// Hello на динамически добавленой кнопки не появляется
+btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        console.log('Hello');
+    })
 });
 
 const btn = document.createElement('button');

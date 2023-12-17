@@ -1,38 +1,38 @@
 'use strict';
 
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    console.log(num);
+// function showFirstMessage(text) {
+//     console.log(text);
+//     console.log(num);
 
-}
-showFirstMessage("Hello World");
-console.log(num);
+// }
+// showFirstMessage("Hello World");
+// console.log(num);
 
-function calc(a, b) {
-    return (a + b);
-}
+// function calc(a, b) {
+//     return (a + b);
+// }
 
-console.log(cacl(4, 3));
-console.log(cacl(5, 6));
-console.log(cacl(4, 7));
+// console.log(cacl(4, 3));
+// console.log(cacl(5, 6));
+// console.log(cacl(4, 7));
 
-function ret() {
-    let num = 50;
+// function ret() {
+//     let num = 50;
 
-    return num;
-}
+//     return num;
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
-const logger = function() {
-    console.log("Hello");
-};
-logger();
+// const logger = function() {
+//     console.log("Hello");
+// };
+// logger();
 
-const calc = (a, b) => a + b;
+// const calc = (a, b) => a + b;
 
 /* const usdCurr = 28;
 const eurCurr = 32;
@@ -66,6 +66,38 @@ function sayHello(text) {
     return `Privet, ${text}!`;
 }
 sayHello('Anton');
+
+
+
+function returnNeighboringNumbers (num) {
+
+    return[num - 1, num, num + 1]; 
+    
+}
+returnNeighboringNumbers(5);
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+            // Тут без черточек в конце
+        } else {
+            str += `${num * i}---`;
+            // Это тоже самое, что и
+            // str = str + num * i + "---"
+        }
+    }
+
+    return str;
+}
+getMathResult(10, 5);
+
 
 
 

@@ -8,8 +8,17 @@
 // });
 // console.log(shortNames);
 
-let answers = ['Bill', 'DrIll', 'AvToNdil, GOMODRILL'];
+// let answers = ['Bill', 'DrIll', 'AvToNdil, GOMODRILL'];
 
-answers = answers.map(item => item.toLowerCase());
+// answers = answers.map(item => item.toLowerCase());
 
-console.log(answers);
+// console.log(answers);
+
+// every/some
+
+const some = [4, 7, 9];
+
+// console.log(some.some(item => typeof(item) === 'number'));
+
+console.log(some.every(item => typeof(item) === 'number'));
+
